@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { LoginForum } from './LoginForum'
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <div className="App" className="App-background">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to scream.
         </p>
+        </header>
+        <body className="App-body">
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,8 +21,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+        <LoginForum />
+      </body>
     </div>
+    </>
   );
 }
 
